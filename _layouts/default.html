@@ -1,18 +1,3 @@
----
-navigation:
-- text: Home
-  url: /
-- text: Adamantine® Yoga
-  url: /adamantine
-- text: About
-  url: /about
-- text: Testimonials
-  url: /testimonials
-- text: Blog
-  url: /blog
-- text: Services
-  url: /services
----
 <!DOCTYPE html>
 <!--[if IE 7 ]><html class="ie ie7" lang="en"><![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"><![endif]-->
@@ -56,18 +41,19 @@ navigation:
 	</div>
 	<div class="sixteen columns">
 		<div id="navigation">
-			<ul id="nav">
-        <li><a id="current" href="/">Home</a></li>
-        <li><a href="/adamantine">Adamantine® Yoga</a></li>
-        <li><a href="#">About</a>
+      <ul>
+        {% assign url = page.url | remove:'/index.html' %}
+        <li><a {% if url == "" %} id="current"{% endif %} href="/">Home</a></li>
+        <li><a {% if url == "/adamantine" %} id="current"{% endif %} href="/adamantine">Adamantine® Yoga</a></li>
+        <li><a {% if url == "/about" %} id="current"{% endif %} {% if url == "/testimonials" %} id="current"{% endif %} href="#">About</a>
         <ul>
           <li><a href="/about">About Shelene</a></li>
           <li><a href="/testimonials">Testimonials</a></li>
         </ul>
         </li>
-				<li><a href="/blog">Blog</a></li>
-        <li><a href="/services">Services</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li><a {% if url == "/blog" %} id="current"{% endif %} href="/blog">Blog</a></li>
+        <li><a {% if url == "/services" %} id="current"{% endif %} href="/services">Services</a></li>
+        <li><a {% if url == "/contact" %} id="current"{% endif %} href="/contact">Contact</a></li>
 			</ul>
 		</div> 
 		<div class="clear"></div>
