@@ -1,0 +1,82 @@
+---
+layout: default
+title: Contact
+---
+<div class="container">
+
+	<div class="sixteen columns">
+	
+		<!-- Page Title -->
+		<div id="page-title">
+			<h2>Contact</h2>
+			<div id="bolded-line"></div>
+		</div>
+		<!-- Page Title / End -->
+
+	</div>
+</div>
+<!-- 960 Container / End -->
+
+
+<!--  960 Container Start -->
+<div class="container">
+
+	<!-- Text -->
+	<div class="sixteen columns">
+    <p>Feel free to submit your questions or comments. I'm excited to connect with you!</p>
+		<br />
+	</div>
+
+	<div class="twelve columns">
+		<div class="form-spacer"></div>
+		
+		<!-- Success Message -->
+		<div class="success-message">
+			<div class="notification success closeable">
+				<p><span>Success!</span> Your message has been sent.</p>
+			</div>
+		</div>
+
+    <div class="fail-message">
+			<div class="notification error closeable">
+				<p><span>Error!</span> Your message was not sent, please try again.</p>
+			</div>
+		</div>
+
+		<div id="contact-form">
+      <form id="contact" action="/contact/" method="post">
+				<div class="field">
+					<label>Name: <span>*</span></label>
+					<input type="text" id="id_wii" name="wii" class="text" />
+				</div>
+
+        <div class="wat field">
+					<label>Name:</label>
+					<input type="text" id="id_name" name="name" class="text" />
+				</div>
+
+				<div class="field">
+					<label>Email: <span>*</span></label>
+					<input type="text" id="id_email" name="email" class="text" />
+				</div>
+				
+				<div class="field">
+					<label>Message: <span>*</span></label>
+					<textarea id="id_message" name="message" class="text textarea" ></textarea>
+				</div>
+				
+				<div class="field">
+					<input type="button" id="send" value="Send Message"/>
+					<div class="loading"></div>
+				</div>
+				
+			</form>
+		</div>
+
+</div>
+
+</div>
+<!-- End 960 Container -->
+
+</div>
+

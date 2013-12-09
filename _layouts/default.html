@@ -1,44 +1,88 @@
+---
+navigation:
+- text: Home
+  url: /
+- text: Adamantine® Yoga
+  url: /adamantine
+- text: About
+  url: /about
+- text: Testimonials
+  url: /testimonials
+- text: Blog
+  url: /blog
+- text: Services
+  url: /services
+---
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+<!--[if IE 7 ]><html class="ie ie7" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Yoga with Shelene | Altoona - Des Moines, IA</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="Seek balance. Discover wellness. Reveal your best self with a customized yoga practice. Shelene Billups, RYT-200.  yogawithshelene@gmail.com | 515-994-0706">
+<meta name="keywords" content="Billups, Shelene, yoga, Altoona, Des Moines, Iowa, Adamantine, balance, wellness, personal training, coaching, private yoga sessions, teacher">
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
+<link rel="stylesheet" type="text/css" href="/css/main.css" id="layout">
+<link rel="image_src" href="/images/shelene/three.jpg" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="/js/main.js"></script>
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
-
-    </head>
-    <body>
-
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
-          </div>
-
-          {{ content }}
-
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Your Name<br />
-                What You Are<br />
-                you@example.com
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-              </p>
-            </div>
-          </div>
-        </div>
-
-    </body>
+</head>
+<body style="background-image: url('/images/bg/washi.png');">
+<div id="wrapper">
+<div class="container ie-dropdown-fix">
+	<div id="header">
+    <div class="eight columns" style="padding-bottom: 15px;">
+			<div id="logo">
+        <a href="#"><img src="/images/yogawithshelenelogo.png" alt="logo" /></a>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div class="eight columns">
+			<ul class="social-icons">
+				<li class="facebook"><a href="https://www.facebook.com/yogawithshelene">Facebook</a></li>
+				<li class="twitter"><a href="https://twitter.com/shelenebillups">Twitter</a></li>
+			</ul>
+			<div class="clear"></div>
+			<div id="contact-details">
+				<ul>
+					<li><i class="mini-ico-envelope"></i><a href="mailto:yogawithshelene@gmail.com">yogawithshelene@gmail.com</a></li>
+					<li><i class="mini-ico-user"></i>515-994-0706</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="sixteen columns">
+		<div id="navigation">
+			<ul id="nav">
+        <li><a id="current" href="/">Home</a></li>
+        <li><a href="/adamantine">Adamantine® Yoga</a></li>
+        <li><a href="#">About</a>
+        <ul>
+          <li><a href="/about">About Shelene</a></li>
+          <li><a href="/testimonials">Testimonials</a></li>
+        </ul>
+        </li>
+				<li><a href="/blog">Blog</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/contact">Contact</a></li>
+			</ul>
+		</div> 
+		<div class="clear"></div>
+	</div>
+</div>
+{{ content }}
+<div id="footer">
+	<div style="margin-top: -15px; background-color: #303030;" class="container">
+		<div class="sixteen columns">
+			<div style="margin-top: 0;" id="footer-bottom">
+				© Copyright 2013 by <a href="/about/">Shelene Billups</a>. All rights reserved.
+				<div id="scroll-top-top"><a href="#"></a></div>
+			</div>
+		</div>
+  </div>
+</div>
+</body>
 </html>
