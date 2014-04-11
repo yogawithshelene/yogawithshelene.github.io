@@ -44,15 +44,21 @@
 			<ul id="nav">
         {% assign url = page.url | remove:'/index.html' %}
         <li><a {% if url == "" %} id="current"{% endif %} href="/">Home</a></li>
-        <li><a {% if url == "/adamantine" %} id="current"{% endif %} href="/adamantine">Adamantine® Yoga</a></li>
+        <li><a {% if url == "/adamantine" %} id="current"{% endif %} href="#">Adamantine® Yoga</a>
+        <ul>
+          <li><a href="/adamantine">What is it?</a></li>
+          <li><a href="/gsp">Guided Self Practice</a></li>
+          <li><a href="/private">Private Sessions</a></li>
+          <li><a href="/group">Group Classes</a></li>
+        </ul>
+        </li>
         <li><a {% if url == "/about" %} id="current"{% endif %} {% if url == "/testimonials" %} id="current"{% endif %} href="#">About</a>
         <ul>
-          <li><a href="/about">About Shelene</a></li>
+          <li><a href="/about">Meet Shelene</a></li>
           <li><a href="/testimonials">Testimonials</a></li>
         </ul>
         </li>
         <li><a {% if url == "/blog" %} id="current"{% endif %} href="/blog">Blog</a></li>
-        <li><a {% if url == "/services" %} id="current"{% endif %} href="/services">Services</a></li>
 			</ul>
 		</div> 
 		<div class="clear"></div>
